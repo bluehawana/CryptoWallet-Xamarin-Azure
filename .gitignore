@@ -1,5 +1,5 @@
 # To exclude AppConfig.cs
-CryptoWallet/AppConfig.cs
+CryptoWallet/CryptoWallet/AppConfig.cs
 # globs
 Makefile.in
 *.userprefs
