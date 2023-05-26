@@ -1,6 +1,7 @@
 # Crypto Wallet Xamarin
 
 ## Overview
+This project is my .Net cloud development diploma project,coins Data provided by CoinGecko, the leading Crypto market provider.
 Crypto Wallet Xamarin is a full-stack mobile application that allows users to track and monitor the prices of cryptocurrencies in real-time. The app utilizes Xamarin for front-end app development, .NET Function app for fetching 100 coins data from Coingecko every 2 minutes, and Azure Cosmos DB for storing the data. Azure SignalR is used to send information about data updates from Cosmos DB to the .NET Function.
 
 The project was developed using Visual Studio Code for Mac and Visual Studio 2022 for Mac, making it easy to build and test the app on iOS and Android devices.
