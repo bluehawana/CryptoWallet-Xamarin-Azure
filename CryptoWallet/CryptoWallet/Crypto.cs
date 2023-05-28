@@ -3,7 +3,7 @@ namespace CryptoWallet
 {
     public class Crypto
     {
-        public string id { get; set; }
+        public string symbol { get; set; }
         public string image { get; set; }
         public double current_price { get; set; }
         public double market_cap_rank { get; set; }

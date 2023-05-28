@@ -42,9 +42,11 @@ namespace CryptoWallet
 
                 // Create a LINQ query to retrieve the data with the filter
                 var query = client.CreateDocumentQuery<Crypto>(collectionUri)
-                    .Where(c => c.current_price > 0);
-                var cryptos = query.ToList();
+             .Where(c => c.current_price > 0)
+             .OrderBy(c => c.market_cap_rank)
+             .Take(100);
 
+                var cryptos = query.ToList();
                 // Set the ListView's ItemsSource to the retrieved data
                 CryptoListView.ItemsSource = cryptos;
             }
@@ -59,7 +61,7 @@ namespace CryptoWallet
             // Handle the ListView's ItemTapped event
             if (e.Item is Crypto tappedCrypto)
             {
-                string message = $"Tapped crypto ID: {tappedCrypto.id}\n" +
+                string message = $"Tapped crypto Name: {tappedCrypto.symbol}\n" +
                                  $"Current Price: {tappedCrypto.current_price}";
 
                 DisplayAlert("Crypto Details", message, "OK");

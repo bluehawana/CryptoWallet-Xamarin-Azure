@@ -32,7 +32,7 @@
                                     <StackLayout Orientation="Vertical"
                                                  HorizontalOptions="StartAndExpand"
                                                  Grid.Column="1">
-                                        <Label Text="{Binding id}"
+                                        <Label Text="{Binding symbol}"
                                                FontSize="18" />
                                         <Label Text="{Binding current_price, StringFormat='${0:N2}'}"
                                                FontSize="15"
